@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<synthetic xmlns="http://www.xebialabs.com/deployit/synthetic">
+
+    <type-modification type="udm.Environment">
+        <property name="requiresJustification" description="Indicated justification is required for this environment" kind="boolean" required="false" category="Deployment Checklist" />
+        <property name="requiresBusinessApproval" description="Business owner authorizing deployment is required" kind="boolean" required="false" category="Deployment Checklist" />
+    </type-modification>
+    
+    <type-modification type="udm.Version">
+        <property name="satisfiesJustification" description="Indicates the package has a justification" 
+                kind="string" required="false" category="Deployment Checklist" label="Does the package contain a justification?"/>
+        <property name="satisfiesBusinessApproval" description="Indicates the business owner or manager authorizing deployment to the higher enviroment" kind="boolean" required="false" category="Deployment Checklist" label="Check if business approved the deployment"/>
+    </type-modification>
+
+</synthetic>
